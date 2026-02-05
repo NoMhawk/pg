@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<SCRIPT>
+	var list = [
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.0900lst.d2.body.png",
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.1000lst.d2.body.png",
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.1100lst.d2.body.png",
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.1200lst.d2.body.png",
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.1300lst.d2.body.png",
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.1400lst.d2.body.png",
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.1500lst.d2.body.png",
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.1600lst.d2.body.png",
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.1700lst.d2.body.png",
+	"http://rasp.mrsap.org/UK+1/FCST/starshg.curr.1800lst.d2.body.png",
+                        ];
+	var index = 0;
+
+function changeLights() {
+    index = index + 1;
+    if (index == list.length) index = 0;
+    var image = document.getElementById('red');
+    image.src=list[index];
+}
+setInterval(function(){changeLights()}, 1000);
+</SCRIPT>
+</HEAD>
+<body>
+<img height="100%"  id="red" src="http://rasp.mrsap.org/UK+1/FCST/starshg.curr.0800lst.d2.body.png">
+</body>
+
+</HTML>

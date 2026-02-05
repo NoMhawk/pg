@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+
+<SCRIPT>
+	var todayhead = [
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.0900lst.d2.head.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1000lst.d2.head.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1100lst.d2.head.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1200lst.d2.head.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1300lst.d2.head.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1400lst.d2.head.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1500lst.d2.head.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1600lst.d2.head.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1700lst.d2.head.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1800lst.d2.head.png",
+                        ];
+	var index2 = 0;
+
+function todayhead() {
+    index2 = index2 + 1; 
+    if (index2 == list.length) index2 = 0;
+    var image = document.getElementById('todayhead');
+    image.src=todayhead[index2];
+}
+setInterval(function(){todayhead()}, 1000);
+</SCRIPT>
+
+
+<SCRIPT>
+	var todaymap = [
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.0900lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1000lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1100lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1200lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1300lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1400lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1500lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1600lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1700lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2/FCST/starshg.curr.1800lst.d2.body.png",
+			];
+	var index = 0;
+
+function changeLights() {
+    index = index + 1; 
+    if (index == list.length) index = 0;
+    var image = document.getElementById('todaymap');
+    image.src=todaymap[index];
+}
+setInterval(function(){changeLights()}, 1000);
+</SCRIPT>
+
+<SCRIPT>
+	var list = [
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.0900lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.1000lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.1100lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.1200lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.1300lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.1400lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.1500lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.1600lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.1700lst.d2.body.png",
+	"http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.1800lst.d2.body.png",
+                        ];
+	var index = 0;
+
+function changeLights2() {
+    index = index + 1; 
+    if (index == list.length) index = 0;
+    var image = document.getElementById('blue');
+    image.src=list[index];
+}
+setInterval(function(){changeLights2()}, 1000);
+</SCRIPT>
+
+
+</HEAD>
+<body>
+Footlaunch Star Rating Today and Tomorrow 8am to 6pm<BR>
+<img width = "25%"               id="todayhead" src="http://rasp.mrsap.org/UK2/FCST/starshg.curr.0800lst.d2.head.png"><BR>
+<img width = "25% height="100%"  id="todaymap"   src="http://rasp.mrsap.org/UK2/FCST/starshg.curr.0800lst.d2.body.png">
+<img width = "25% height="100%"  id="blue"  src="http://rasp.mrsap.org/UK2+1/FCST/starshg.curr.0800lst.d2.body.png">
+
+</body>
+
+</HTML>
